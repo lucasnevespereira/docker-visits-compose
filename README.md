@@ -49,3 +49,13 @@ services:
       - "8081:8081"
 
 ```
+
+## Run containers with Docker Compose Commands
+
+To run our containers
+`docker-compose up`
+<small> It has the same usage as <i> docker run myImage </i> </small>
+
+To start and rebuild our containers
+`docker-compose up --build`
+<small> It has the same usage as doing <i> docker build . </i> + <i> docker run myImage </i> </small>

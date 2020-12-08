@@ -50,7 +50,7 @@ services:
 
 ```
 
-## Run containers with Docker Compose Commands
+## Containers Usage with Docker Compose Commands
 
 To run our containers
 `docker-compose up`
@@ -59,3 +59,9 @@ To run our containers
 To start and rebuild our containers
 `docker-compose up --build`
 <small> It has the same usage as doing <i> docker build . </i> + <i> docker run myImage </i> </small>
+
+To run containers in the background
+`docker-compose up -d`
+
+To stop containers
+`docker-compose down`

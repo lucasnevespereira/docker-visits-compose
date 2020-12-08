@@ -2,6 +2,7 @@ const express = require("express");
 const redis = require("redis");
 
 const app = express();
+// TODO: connect to redis server
 const client = redis.createClient();
 
 client.set("visits", 0);

@@ -28,3 +28,24 @@ Here are the containers I want to create:
 - <b>node-app</b>
   - make it using the `Dockerfile` in the current directory
   - map port 8081
+
+<i>Example code:</i>
+
+```
+# Specifies the version of docker-compose we want to use
+version: "3"
+
+# Write what we want our docker-compose to do
+services:
+  # First container
+  redis-server:
+    # Image for this container
+    image: "redis"
+  node-app:
+    # Look for a Dockerfile in current directory to build an image
+    build: .
+    # Map port in local machine to port inside container
+    ports:
+      - "8081:8081"
+
+```

@@ -4,6 +4,6 @@
     "redis": "2.8.0"
   }, 
   "scripts": {
-    "start": "npm start"
+    "start": "node index.js"
   }
 }
